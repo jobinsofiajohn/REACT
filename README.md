@@ -1,1 +1,1 @@
-This is where I will be adding all my React projects as part of my learning
+This repo will house all the projects I build as part of learing react.
