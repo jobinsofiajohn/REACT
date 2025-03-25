@@ -12,7 +12,7 @@ function compute(){
     return;
   }
 
-  else if(opOne.value == '' || opTwo.value ==''){
+  else if(opOne.value.trim() == '' || opTwo.value.trim() ==''){
     alert('Please Fill both input fields');
     return;
   }
