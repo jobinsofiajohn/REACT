@@ -1,4 +1,5 @@
 function validator()
+
 {
   const name = document.getElementById('name')
   const email = document.getElementById('email')
@@ -12,7 +13,7 @@ function validator()
   pwd.classList.remove('invalid-input')
   op.classList.remove('valid')
   
-  const emailCheck = !email.value.includes('@') || !email.value.includes('.')
+  const emailCheck = !(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value))
   const phoneCheck = phone.value.length < 10 || !/\d/.test(phone.value)
   const pwdCheck = pwd.value.length < 6
   const nameCheck = /\d/.test(name.value) || name.value.length < 3
